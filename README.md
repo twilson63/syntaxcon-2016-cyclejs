@@ -60,3 +60,12 @@ run(main, {
   DOM: makeDOMDriver('#app')
 })
 ```
+
+---
+
+```
+mkdir src/components
+touch src/components/edit.js
+```
+
+---
