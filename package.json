@@ -17,6 +17,7 @@
     "@cycle/dom": "^9.4.0",
     "@cycle/http": "^8.2.2",
     "cleaver": "^0.8.2",
+    "form-serialize": "^0.7.1",
     "rx": "^4.1.0"
   },
   "devDependencies": {
