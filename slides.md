@@ -438,11 +438,15 @@ function component (sources) {
 
 ```
 
----
+--
 
 # Demo
 
----
+--
+
+# Questions
+
+--
 
 ### References
 
