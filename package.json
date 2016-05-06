@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "wzrd src/app.js"
+    "start": "wzrd src/app.js",
+    "build": "cleaver slides.md",
+    "watch": "cleaver watch slides.md"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "@cycle/core": "^6.0.3",
     "@cycle/dom": "^9.4.0",
     "@cycle/http": "^8.2.2",
+    "cleaver": "^0.8.2",
     "rx": "^4.1.0"
   },
   "devDependencies": {
