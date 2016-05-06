@@ -393,6 +393,7 @@ em {
 }
 
   </style>
+    <script async src="http://localhost:35729/livereload.js"></script>
 </head>
 <body>
     <div class="progress">
@@ -607,7 +608,8 @@ run(main, {
   </div>
   <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h2 id="setup">Setup</h2>
-<pre><code>npm install rx @cycle/core @cycle/dom</code></pre>
+<pre><code>npm init
+npm install rx @cycle/core @cycle/dom -S</code></pre>
 <pre><code>&lt;html&gt;
   ...
   &lt;body&gt;
@@ -649,6 +651,36 @@ run(main, {
 </section>
   </div>
   <div class="slide hidden" id="slide-23">
+    <section class="slide-content"><h3 id="http">http</h3>
+<pre><code>npm install @cycle/http -S</code></pre>
+<pre><code>import { makeHTTPDriver } from &#39;@cycle/http&#39;</code></pre>
+<pre><code>function main (sources) {
+  const request$ = Observable.of({
+    url: DOC_URL,
+    method: &#39;GET&#39;
+  })
+
+  const response$ = sources.HTTP
+    .filter(res$ =&gt; res$.request.url === DOC_URL).mergeAll()
+    .map(res =&gt; JSON.parse(res.text))
+
+  return {
+    DOM: response$
+      .map(data =&gt; div(JSON.stringify(data))),
+    HTTP: request$
+  }
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><h3 id="components">Components</h3>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-25">
+    <section class="slide-content"><h3 id="model-view-intent">Model View Intent</h3>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-26">
     <section class="slide-content"><h3 id="references">References</h3>
 <ul>
 <li><a href="http://cycle.js.org/">http://cycle.js.org/</a></li>
@@ -657,7 +689,7 @@ run(main, {
 </ul>
 </section>
   </div>
-  <div class="slide hidden author-slide" id="slide-24">
+  <div class="slide hidden author-slide" id="slide-27">
     <section class="slide-content"><div class="author">
   <h1 class="name">Tom Wilson</h1>
     <h3 class="twitter">

@@ -232,7 +232,8 @@ run(main, {
 ## Setup
 
 ```
-npm install rx @cycle/core @cycle/dom
+npm init
+npm install rx @cycle/core @cycle/dom -S
 ```
 
 ```
@@ -284,8 +285,44 @@ function main (sources) {
 
 --
 
+### http
 
+```
+npm install @cycle/http -S
+```
 
+```
+import { makeHTTPDriver } from '@cycle/http'
+```
+
+```
+function main (sources) {
+  const request$ = Observable.of({
+    url: DOC_URL,
+    method: 'GET'
+  })
+
+  const response$ = sources.HTTP
+    .filter(res$ => res$.request.url === DOC_URL).mergeAll()
+    .map(res => JSON.parse(res.text))
+
+  return {
+    DOM: response$
+      .map(data => div(JSON.stringify(data))),
+    HTTP: request$
+  }
+}
+```
+
+--
+
+### Components
+
+--
+
+### Model View Intent
+
+--
 
 ### References
 
