@@ -66,7 +66,7 @@ Jack Russell Software
 
 --
 
-![Spreadsheet](/spreadsheet.png)
+![Spreadsheet](https://cdn.rawgit.com/twilson63/syntaxcon-2016-cyclejs/master/spreadsheet.png)
 
 --
 
@@ -202,7 +202,7 @@ Observable.fromEvent(document.getElementById('.btn'), 'click')
 
 --
 
-![cyclejs](/cyclejs-flow.png)
+![cyclejs](https://cdn.rawgit.com/twilson63/syntaxcon-2016-cyclejs/master/cyclejs-flow.png)
 
 --
 
