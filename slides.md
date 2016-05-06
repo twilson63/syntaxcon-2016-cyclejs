@@ -11,7 +11,7 @@ theme: jdan/cleaver-retro
 
 <h1>
 <center>
-  <img src="/cyclejs_logo.svg" height="100px" />
+  <img src="cyclejs_logo.svg" height="100px" />
   CycleJS
 </center>
 </h1>
