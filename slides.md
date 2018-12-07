@@ -11,7 +11,7 @@ theme: jdan/cleaver-retro
 
 <h1>
 <center>
-  <img src="https://cdn.rawgit.com/twilson63/syntaxcon-2016-cyclejs/gh-pages/cyclejs_logo.svg" height="100px" />
+  <img src="https://cdn.jsdelivr.net/gh/twilson63/syntaxcon-2016-cyclejs@gh-pages/cyclejs_logo.svg" height="100px" />
   CycleJS
 </center>
 </h1>
